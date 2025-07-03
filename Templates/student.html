@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for student in student_list %}
+<ol>
+
+    <li>{{ student.First_name}}</li>
+    <li>{{ student.Last_name}}</li>
+    <li>{{ student.Student_id}}</li>
+    
+</ol>    
+
+
+{% endfor %}
+
+{% endblock content %}
+
+
+  
+    

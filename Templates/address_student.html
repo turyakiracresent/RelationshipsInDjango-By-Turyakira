@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for address_student in address_student_list %}
+<ol>
+
+    <li>{{ address_student.student}}</li>
+    <li>{{ address_student.country}}</li>
+    <li>{{ address_student.city}}</li>
+    <li>{{ address_student.district}}</li>
+    <li>{{ address_student.subcounty}}</li>
+    <li>{{ address_student.village}}</li>
+</ol>    
+
+
+{% endfor %}
+
+{% endblock content %}
+
+
+  
+    

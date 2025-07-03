@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for course in course_list %}
+<ol>
+
+    <li>{{course.course_id}}</li>
+    <li>{{course.course_name}}</li>
+    <li>{{course.credits}}</li>
+    <li>{{course.department}}</li>
+</ol>    
+
+
+{% endfor %}
+
+{% endblock content %}
+
+
+  
+    

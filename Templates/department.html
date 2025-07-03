@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for department in department_list %}
+<ol>
+
+    <li>{{department.department_id}}</li>
+    <li>{{department.department_name}}</li>
+    <li>{{department.head_of_department}}</li>
+    
+</ol>    
+
+
+{% endfor %}
+
+{% endblock content %}
+
+
+  
+    

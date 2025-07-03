@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>The University Course Rgistration System</title>
+    
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color:red;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        </style>
+    <body>
+<h1>The University Course Rgistration System</h1><br>
+<a href="{% url 'staff' %}">Staff</a> | 
+<a href="{% url 'address_staff' %}">Staff-Address</a> | 
+<a href="{% url 'student' %}">Student</a> | 
+<a href="{% url 'address_student' %}">Student-Address</a> | 
+<a href="{% url 'department' %}">Department</a> | 
+<a href="{% url 'course' %}">Course</a>
+
+{% block content %}
+
+{% endblock content %}
+
+
+    </body>
+</html>        
+    

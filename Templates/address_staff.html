@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for address_staff in address_staff_list %}
+<ol>
+
+    <li>{{ address_staff.staff}}</li>
+    <li>{{ address_staff.country}}</li>
+    <li>{{ address_staff.city}}</li>
+    <li>{{ address_staff.district}}</li>
+    <li>{{ address_staff.subcounty}}</li>
+    <li>{{ address_staff.village}}</li>
+</ol>    
+
+
+{% endfor %}
+
+{% endblock content %}
+
+
+  
+    

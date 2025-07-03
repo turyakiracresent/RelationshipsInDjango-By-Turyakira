@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for staff in staff_list %}
+<ol>
+
+    <li>{{ staff.First_name}}</li>
+    <li>{{ staff.Last_name}}</li>
+    <li>{{ staff.Staff_id}}</li>
+    <li>{{ staff.Department}}</li>
+</ol>    
+
+
+{% endfor %}
+
+{% endblock content %}
+
+
+  
+    
